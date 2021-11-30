@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutorial5
+namespace KIT206_RAP_Project
 {
-    enum Gender
+    enum GenderEnum
     {
         M,
         F,
@@ -16,9 +16,54 @@ namespace Tutorial5
     {
 
 
-        public string name;
-        public int id;
-        public Gender gender;
+        private string name; 
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    name = value;
+                }
+            }
+        }
+
+        private int id;
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    id = value;
+                }
+            }
+        }
+
+
+        public GenderEnum gender;
+        public int Gender
+        {
+            get
+            {
+                return Gender;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    Gender = value;
+                }
+            }
+        }
 
         public override string ToString()
         {
