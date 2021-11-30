@@ -10,16 +10,9 @@ namespace KIT206_RAP_Project
     {
         static void Main(string[] args)
         {
+            Boss bigBoss = new Boss();
 
-        }
-
-        static void PrintList(List<Employee> employees)
-        {
-            foreach (Employee currentEmployee in employees)
-            {
-                Console.WriteLine(currentEmployee.ToString());
-
-            }
+            bigBoss.Display();
         }
 
         static List<Employee> FilterByGender(List<Employee> staff, GenderEnum gender)
