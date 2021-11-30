@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace KIT206_RAP_Project
 {
-    enum GenderEnum
+    public enum GenderEnum
     {
         M,
         F,
         X
     }
-    class Employee
+    public class Employee
     {
 
 
