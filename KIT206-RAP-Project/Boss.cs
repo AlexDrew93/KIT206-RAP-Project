@@ -37,15 +37,13 @@ namespace KIT206_RAP_Project
 
         public Employee Fire(int id)
         {
-            foreach (Employee currentEmployee in staff)
+            Employee currentEmployee = Use(id);
+
+            if (currentEmployee.Id == id)
             {
-                if (currentEmployee.Id == id)
-                {
-                    staff.Remove(currentEmployee);
-                    return currentEmployee;
-                }
+                staff.Remove(currentEmployee);
             }
-            return null;
+            return currentEmployee;
         }
     }
 }
