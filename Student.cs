@@ -16,13 +16,13 @@ namespace KIT206_RAP_Project
         {
             get
             {
-                return givenname;
+                return degree;
             }
             set
             {
                 if (value != null)
                 {
-                    givenname = value;
+                    degree = value;
                 }
             }
         }
