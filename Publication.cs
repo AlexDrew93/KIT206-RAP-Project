@@ -120,7 +120,7 @@ namespace KIT206_RAP_Project
 
         private DateTime availabledate; 
 
-        public Datetime availabledate
+        public Datetime AvailableDate
         {
             get
             {
