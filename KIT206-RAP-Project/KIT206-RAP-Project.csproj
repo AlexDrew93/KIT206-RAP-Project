@@ -45,9 +45,17 @@
   <ItemGroup>
     <Compile Include="Agency.cs" />
     <Compile Include="Boss.cs" />
+    <Compile Include="ERDAdapater.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publication.cs" />
+    <Compile Include="PublicationsController.cs" />
+    <Compile Include="Researcher.cs" />
+    <Compile Include="ResearcherController.cs" />
+    <Compile Include="Staff.cs" />
+    <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

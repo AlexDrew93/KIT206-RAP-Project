@@ -10,7 +10,7 @@ namespace KIT206_RAP_Project
   
     class Program
     {
-                static void Main(string[] args)
+        static void Main(string[] args)
         {
             Action doSomething;
             ManageWorker manage;
@@ -39,20 +39,5 @@ namespace KIT206_RAP_Project
 
             //bigBoss.Display();
         }
-
-        //static List<Employee> FilterByGender(List<Employee> staff, GenderEnum gender)
-        //{
-        //    List<Employee> newList = new List<Employee>();
-
-        //    foreach (Employee currentEmployee in staff)
-        //    {
-        //        if (currentEmployee.gender == gender)
-        //        {
-        //            newList.Add(currentEmployee);
-        //        }
-        //    }
-
-        //    return newList;
-        //}
     }
 }
