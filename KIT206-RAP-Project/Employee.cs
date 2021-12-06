@@ -6,70 +6,19 @@ using System.Threading.Tasks;
 
 namespace KIT206_RAP_Project
 {
-    public enum GenderEnum
-    {
-        M,
-        F,
-        X
-    }
+    public enum Gender { M, F, X };
+
     public class Employee
     {
-
-
-        private string name; 
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                if (value != null)
-                {
-                    name = value;
-                }
-            }
-        }
-
-        private int id;
-        public int Id
-        {
-            get
-            {
-                return id;
-            }
-            set
-            {
-                if (value != null)
-                {
-                    id = value;
-                }
-            }
-        }
-
-
-        public GenderEnum gender;
-        public int Gender
-        {
-            get
-            {
-                return Gender;
-            }
-            set
-            {
-                if (value != null)
-                {
-                    Gender = value;
-                }
-            }
-        }
+        //Changed properties to auto-generated getters and setters for clarity
+        public string Name { get; set; }
+        public int Id { get; set; }
+        public Gender Gender { get; set; }
 
         public override string ToString()
         {
-            return name + " " + id + " " + gender;
+            return Name + ' ' + Id + ' ' + Gender;
         }
-
 
     }
 }
