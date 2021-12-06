@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace KIT206_RAP_Project
 {
     public delegate Employee ManageWorker(int id);
-
+  
     class Program
     {
-        static void Main(string[] args)
+                static void Main(string[] args)
         {
             Action doSomething;
             ManageWorker manage;
