@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace KIT206_RAP_Project
 {
-    public enum EmploymentLevel  // Put this with Position
-    {
-        Student,
-        A,
-        B,
-        C,
-        D,
-        E
-    }
+   
 
     public class Researcher
     {
