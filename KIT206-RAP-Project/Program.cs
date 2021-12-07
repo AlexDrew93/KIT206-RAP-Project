@@ -31,10 +31,11 @@ namespace KIT206_RAP_Project
             doSomething = bigBoss.Display;
             manage = bigBoss.Fire;
 
+            bigBoss.LoadSkills();
             doSomething();
 
-            List<TrainingSession> Test = Agency.LoadTrainingSessions(123466);
-            DisplayFreshCerts(Test);
+            //List<TrainingSession> Test = Agency.LoadTrainingSessions(123466);
+            //DisplayFreshCerts(Test);
 
             //Console.WriteLine("Dealing with {0}", manage(2));
             //doSomething();

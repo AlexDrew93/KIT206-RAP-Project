@@ -15,9 +15,19 @@ namespace KIT206_RAP_Project
         public int Id { get; set; }
         public Gender Gender { get; set; }
 
+        public List<TrainingSession> Skills { get; set; }
+
         public override string ToString()
         {
-            return Name + ' ' + Id + ' ' + Gender;
+            string employee = (Name + ' ' + Id + ' ' + Gender + '\n');
+            string skills = "";
+
+            foreach (TrainingSession current in Skills)
+            {
+                skills = skills + current.SkillsString() + '\n';
+
+            }
+            return  employee + skills;
         }
 
     }

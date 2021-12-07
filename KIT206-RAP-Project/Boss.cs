@@ -14,6 +14,14 @@ namespace KIT206_RAP_Project
             staff = Agency.LoadAll();
         }
 
+        public void LoadSkills()
+        {
+            foreach (Employee current in staff)
+            {
+                current.Skills = Agency.LoadTrainingSessions(current.Id);
+            }
+        }
+
         public void Display()
         {
             foreach (Employee currentEmployee in staff)

@@ -39,7 +39,7 @@ namespace KIT206_RAP_Project
 
                 while (rdr.Read())
                 {
-                    TestList.Add(new Employee { Name = rdr.GetString(1) + rdr.GetString(2), Id = rdr.GetInt32(0) });
+                    TestList.Add(new Employee { Name = rdr.GetString(1) + ' ' + rdr.GetString(2), Id = rdr.GetInt32(0) });
                 }
             }
             finally
@@ -75,7 +75,7 @@ namespace KIT206_RAP_Project
                 while (rdr.Read())
                 {
                     TestPubList.Add(new TrainingSession
-                        { Title = rdr.GetString(0), Year = rdr.GetInt32(1), Certified = rdr.GetDateTime(3)});
+                        { Title = rdr.GetString(0), Year = rdr.GetInt32(1), Mode = TrainingSession.ParseEnum<TrainingSession.EnumMode>(rdr.GetString(2)), Certified = rdr.GetDateTime(3)});
                 }
             }
             finally

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KIT206_RAP_Project
 {
-    class TrainingSession
+    public class TrainingSession
     {
         public enum EnumMode { Conference, Journal, Other };
 
@@ -18,14 +18,19 @@ namespace KIT206_RAP_Project
 
         public EnumMode Mode { get;  set; }
 
-        public override string ToString()
+        public string SkillsString()
         {
-            return Title + "completed by " + Mode + " on " + Certified.Date;
+            return Title + " completed by " + Mode + " on " + Certified.Day + '/' + Certified.Month + '/' + Certified.Year;
         }
 
         public int Freshness
         {
             get { return DateTime.Now.Subtract(Certified).Days; }
+        }
+
+        public static T ParseEnum<T>(string value)
+        {
+            return (T)Enum.Parse(typeof(T), value);
         }
     }
 }
