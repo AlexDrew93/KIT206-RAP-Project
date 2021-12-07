@@ -11,7 +11,7 @@ namespace KIT206_RAP_Project
         private List<Employee> staff;
 
         public Boss() {
-            staff = Agency.Generate();
+            staff = Agency.LoadAll();
         }
 
         public void Display()

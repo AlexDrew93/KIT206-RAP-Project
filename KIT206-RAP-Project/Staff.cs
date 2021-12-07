@@ -13,13 +13,13 @@ namespace KIT206_RAP_Project.Research
        
         public float ThreeYearAverage()
         {
-           return null;
+           return 0;
         }
 
         public float Performance()
-	{
-	   return null;
-	}
+	    {
+	        return 0;
+	    }
 
 
     }

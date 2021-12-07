@@ -14,7 +14,7 @@ namespace KIT206_RAP_Project.Control
         
         public void LoadResearchers()
         {
-            return null;
+            return;
         }
 
         public void FilterByLevel(Research.EmploymentLevel level)
@@ -31,17 +31,17 @@ namespace KIT206_RAP_Project.Control
 
                 //return newList;
 
-            return null;
+            return;
         }
 
         public void FilterByName(string name)
         {
-            return null;
+            return;
         }
 
         public void LoadResearcherDetails()
         {
-            return null;
+            return;
         }
 
        

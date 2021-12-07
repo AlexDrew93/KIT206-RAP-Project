@@ -151,37 +151,37 @@ namespace KIT206_RAP_Project.Research
 
         public Position GetCurrentJob()
         {
-            ;
+            return null;
         }
 
         public string CurrentJobTitle()
         {
-            ;
+            return null;
         }
 
         public DateTime CurrentJobStart()
         {
-            ;
+            return new DateTime(1943, 04, 01);
         }
 
         public Position GetEarliestJob()
         {
-            ;
+            return null;
         }
 
         public DateTime EarliestStart()
         {
-            ;
+            return new DateTime(1943, 04, 01);
         }
 
         public float Tenure()
         {
-            ;
+            return 0;
         }
 
         public int PublicationsCount()
         {
-            ;
+            return 0;
         }
 
 

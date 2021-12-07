@@ -120,7 +120,7 @@ namespace KIT206_RAP_Project.Research
 
         private DateTime availabledate; 
 
-        public Datetime AvailableDate
+        public DateTime AvailableDate
         {
             get
             {
@@ -139,7 +139,7 @@ namespace KIT206_RAP_Project.Research
 
         public int Age()
         {
-            return null;
+            return 0;
         }
 
 
