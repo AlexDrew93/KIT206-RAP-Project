@@ -33,6 +33,7 @@ namespace KIT206_RAP_Project
 
             bigBoss.LoadSkills();
             doSomething();
+            Console.ReadKey();
 
             //List<TrainingSession> Test = Agency.LoadTrainingSessions(123466);
             //DisplayFreshCerts(Test);

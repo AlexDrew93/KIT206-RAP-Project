@@ -70,7 +70,9 @@ namespace KIT206_RAP_Project
                 MySqlCommand cmd = new MySqlCommand("select title, year, type, available " +
                  "from publication as pub, researcher_publication as respub " +
                  "where pub.doi = respub.doi and researcher_id=?id", conn);
-                cmd.Parameters.AddWithValue("id", Id);                rdr = cmd.ExecuteReader();
+                cmd.Parameters.AddWithValue("id", Id);
+
+                rdr = cmd.ExecuteReader();
 
                 while (rdr.Read())
                 {
@@ -91,6 +93,38 @@ namespace KIT206_RAP_Project
             }
 
             return TestPubList;
+        }
+
+        //Option 2 for retreiving publication count, ToString not currently utilising this method
+        public static int EmployeeTrainingCount(Employee e, int startYear, int endYear)
+        {
+            MySqlConnection conn = GetConnection();
+            int count = 0;
+
+            try
+            {
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand("select count(*) from publication as pub, researcher_publication as respub " +
+                                                    "where pub.doi = respub.doi and researcher_id = ?id and year >= ?start and year <= ?end", conn);
+                cmd.Parameters.AddWithValue("id", e.Id);
+                cmd.Parameters.AddWithValue("start", startYear);
+                cmd.Parameters.AddWithValue("end", endYear);
+                count = Int32.Parse(cmd.ExecuteScalar().ToString());
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error connecting to database: " + ex);
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+
+            return count;
         }
 
         static public MySqlConnection conn { get; set; }
